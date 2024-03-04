@@ -1,5 +1,6 @@
 import Data.ByteString (group)
 import Data.Char
+import Data.List
 
 
 -- Exercises 3.11
@@ -396,7 +397,7 @@ altMap _ _ [] = []
 altMap f0 f1 (x:xs) = f0 x : altMap f1 f0 xs
 
 -- 5
-import Data.List
+
 
 votes :: [String]
 votes = ["Red", "Blue", "Green", "Blue", "Blue", "Red"]
